@@ -1,41 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Converter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
-
 <body>
-    <div class="header">
-        <img src="/Asset 1@3x 1.png" alt="">
+    
+<header>
+    <div>
+        <img src="Asset 1@3x 1.png" alt="">
+    </div>
+    <div>
         <ul>
-            <li class="bir">
-                БАНК
-            </li >
-            <li class="iki">
-                БИЗНЕС
-            </li>
-            <li class="uc">
-                ИНВЕСТИЦИИ
-            </li>
-            <li class="dord">
-                СТРАХОВАНИЕ
-            </li>
-            <li class="bes">
-                МОБАЙЛ
-            </li>
-            <li class="alti">
-                ПУТЕШЕСТВИЯ
-            </li>
-            <li class="yeddi">
-                РАЗВЛЕЧЕНИЯ
-            </li>
+            <li>БАНК</li>
+            <li>БИЗНЕС</li>
+            <li>ИНВЕСТИЦИИ</li>
+            <li>СТРАХОВАНИЕ</li>
+            <li>МОБАЙЛ</li>
+            <li>ПУТЕШЕСТВИЯ</li>
+            <li>РАЗВЛЕЧЕНИЯ</li>
         </ul>
     </div>
-</body>
+    <div>
+        <button>ВОЙТИ</button>
+    </div>
+</header>
 
+<main>
+    <h1>Конвертер валют онлайн</h1>
+    <div class="content">
+        <div class="first-content box">
+            <p>У меня есть</p>
+            <div class="first-box">
+                <button>RUB</button><button>USD</button><button>EUR</button><button>GBP</button>
+            </div>
+            <form class="in safe">
+                <input type="number" placeholder="0" value="">
+                <p></p>
+            </form>
+        </div>
+        <div class="second-content box">
+            <p>Хочу приобрести</p>
+            <div class="second-box">
+                <button>RUB</button><button>USD</button><button>EUR</button><button>GBP</button>
+            </div>
+            <div class="out safe">
+                <input type="number">
+                <p>1 RUB = 1 RUB</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+    <script src='index.js'></script>
+</body>
 </html>
