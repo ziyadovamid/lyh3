@@ -1,15 +1,15 @@
-let button = document.querySelectorAll('.first-box button');
-let secondButton = document.querySelectorAll('.second-box button');
-let p = document.querySelector('.in p');
-let p2 = document.querySelector('.out p');
+let add = document.querySelectorAll('.first-box button');
+let Button = document.querySelectorAll('.second-box button');
+let red = document.querySelector('.in p');
+let blue = document.querySelector('.out p');
 let x = "1 RUB",y = "1 RUB",any;
-p.innerHTML = x+" = "+y;
+red.innerHTML = x+" = "+y;
 let base='RUB',symbols='RUB';
 
 let input = document.querySelector('.in input')
 let output = document.querySelector('.out input')
 
-button.forEach((item)=>{
+add.forEach((item)=>{
     item.addEventListener('click',(e)=>{
         x = "1 "+ e.target.innerText;
         base = e.target.innerText;
@@ -28,7 +28,7 @@ button.forEach((item)=>{
     })
 })
 
-secondButton.forEach((element)=>{
+Button.forEach((element)=>{
     element.addEventListener('click',(a)=>{
         symbols = a.target.innerText;
         myFunction();
@@ -58,8 +58,8 @@ async function myFunction(){
     }
     output.value = any * input.value;
     y = any + " " + symbols;
-    p.innerHTML = x+" = "+y;
-    p2.innerHTML = "1 "+ symbols +" = "+1/any + " " + base;
+    red.innerHTML = x+" = "+y;
+    blue.innerHTML = "1 "+ symbols +" = "+1/any + " " + base;
 }  
 
 myFunction();
